@@ -5,9 +5,9 @@ import javax.swing.*;
 public class Main { // Citation -  I used this link as a reference:
     // https://www.javatpoint.com/example-to-connect-to-the-mysql-database
     public static void main(String[] args) {
-        ArrayList<String> queryStrings = new ArrayList<String>(); // each string is a row from the table
+        ArrayList<String> queryStrings = new ArrayList<>(); // each string is a row from the table
         StringBuilder alertBoxMessage = new StringBuilder(); // all the rows will be appended here
-        Connection con = null;
+        Connection con;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             // establish a connection
